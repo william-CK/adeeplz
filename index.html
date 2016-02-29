@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script type="text/javascript" src='jquery.countdown.js' ></script>
+	</head>
+
+	<body>
+
+		<div class='wrapper'>
+
+		</div>
+
+		<div class='wrapper-wrapper' >
+			<h1 class='countdown'> </h1>
+
+			<h2> Days Hours Minutes Seconds</h2>
+
+		</div>
+
+		<nav>
+			<p class='menu-btn'> > </p> 
+
+			<ul>
+				<li> <a href='#'> Home </a> </li>
+				<li> <a href='#'> Info </a> </li>
+				<li> <a href='#'> Rules </a> </li>
+				<li> <a href='#'> Theme </a> </li>
+				<li> <a href='#'> Our Story </a> </li>
+				<li> <a href='#'> RSVP </a> </li>
+				<li> <a href='#'> Contact </a> </li>
+				<li> <a href='#'> Photos </a> </li>
+			</ul>
+
+		</nav>
+
+		<script type="text/javascript">
+		  $(".countdown")
+		  .countdown("2016/12/16", function(event) {
+		    $(this).text(
+		      event.strftime('%D : %H : %M : %S')
+		    );
+		  });
+		</script>
+
+	</body>
+
+
+</html>
