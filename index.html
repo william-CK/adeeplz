@@ -1,23 +1,31 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="adeestyle.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script type="text/javascript" src='jquery.countdown.js' ></script>
+		
 	</head>
 
 	<body>
 
 		<div class='wrapper'>
-
+			<div id="rsvp">
+				<script type="text/javascript" src="http://app.rsvpify.com/embed/36975"></script>
+				<script type="text/javascript" src="http://app.rsvpify.com/js/iframeResizer.min.js"></script>
+				<script type="text/javascript">iFrameResize({autoResize: true,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");</script>
+			</div>
 		</div>
 
-		<div class='wrapper-wrapper' >
+		<div class='wrapper-wrapper'>
+			
 			<h1 class='countdown'> </h1>
 
-			<h2> Days Hours Minutes Seconds</h2>
+			<h2>Days Hours Minutes Seconds</h2>
 
 		</div>
-
+		
+		
 		<nav>
 			<p class='menu-btn'> > </p> 
 
@@ -27,19 +35,26 @@
 				<li> <a href='#'> Rules </a> </li>
 				<li> <a href='#'> Theme </a> </li>
 				<li> <a href='#'> Our Story </a> </li>
-				<li> <a href='#'> RSVP </a> </li>
+				<li> <a href='#rsvp'> RSVP </a> </li>
 				<li> <a href='#'> Contact </a> </li>
 				<li> <a href='#'> Photos </a> </li>
 			</ul>
 
 		</nav>
-
+		
 		<script type="text/javascript">
 		  $(".countdown")
 		  .countdown("2016/12/16", function(event) {
 		    $(this).text(
 		      event.strftime('%D : %H : %M : %S')
 		    );
+		// 	var $this = $(this).html(event.strftime(''
+// 				+ '<span>%w</span> weeks '
+// 				+ '<span>%d</span> days '
+// 				+ '<span>%H</span> hr '
+// 				+ '<span>%M</span> min '
+// 				+ '<span>%S</span> sec'));
+
 		  });
 		</script>
 
@@ -49,7 +64,7 @@
 				$("nav ul").animate({width:'toggle'},350);
 			});
 		</script>
-
+		
 	</body>
 
 

@@ -49,24 +49,25 @@ table {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8); }
+  height: 300px;
+  background: url(images/bg.jpg);
+  }
 
 .wrapper {
-  background: url("http://i.imgur.com/RXzJGGN.jpg");
+  background: url(images/bg2.png);/*url("http://i.imgur.com/RXzJGGN.jpg");*/
   width: 100%;
   height: 100%; }
 
 .countdown, .wrapper-wrapper h2 {
-  color: white;
+  color: #857AAC;
   font-family: helvetica;
   font-weight: 100;
-  font-size: 100pt;
+  font-size: 90pt;
   width: 100%;
   text-align: center;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(0, -150%); }
+  -webkit-transform: translate(0, -90%); }
 
 .wrapper-wrapper h2 {
   font-size: 20pt;

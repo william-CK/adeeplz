@@ -1,0 +1,21 @@
+.menu-btn{
+	cursor:default;
+}
+
+.wrapper-wrapper{
+	width:80%;
+	margin-left:10%;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.wrapper{
+	margin-top:300px;
+	width:80%;
+	margin-left:10%;
+}
+#rsvp{
+
+
+}
