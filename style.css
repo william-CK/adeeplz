@@ -46,7 +46,7 @@ table {
   border-spacing: 0; }
 
 .wrapper-wrapper {
-  position: fixed;
+  position: absolute;
   top: 0px;
   width: 100%;
   height: 300px;
