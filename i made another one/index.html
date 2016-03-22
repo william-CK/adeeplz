@@ -31,14 +31,14 @@
 			</div>
 			
 		<ul class="nav nav-pills nav-justified mynav">
-		  <li role="presentation"><a href="#">Home</a></li>
+		  <li role="presentation"><a href="#" id="homebut">Home</a></li>
 		  <li role="presentation"><a href="#">Our Story</a></li>
 		  <li role="presentation"><a href="#">Info</a></li>
 		  <li role="presentation"><a href="#">Rules</a></li>
-		  <li role="presentation" class="disabled"><a href="#"><span class="glyphicon glyphicon-heart" ></span></a></li>
+		  <li role="presentation"><span class="glyphicon glyphicon-heart" ></span></li>
 		  
 		  <li role="presentation"><a href="#">Theme</a></li>
-		  <li role="presentation"><a href="#">RSVP</a></li>
+		  <li role="presentation"><a href="#" id="rsvpbut">RSVP</a></li>
 		  <li role="presentation"><a href="#">Contact</a></li>
 		  
 		</ul>
@@ -66,14 +66,14 @@
 			<img src="images/final2.png" class="img-responsive"/>
 		
 		</div>
-		<div class="container col-md-12" id="home">
-<!-- 
+		<div class="container-fluid col-md-12" id="home">
+
 			<div id="rsvp">
 				<script type="text/javascript" src="http://app.rsvpify.com/embed/36975"></script>
 				<script type="text/javascript" src="http://app.rsvpify.com/js/iframeResizer.min.js"></script>
 				<script type="text/javascript">iFrameResize({autoResize: true,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");</script>
 			</div>
- -->
+
 		</div>
 	
 		
@@ -100,6 +100,15 @@
 			$(".menu-btn").click(function(){
 				$("nav ul").animate({height:'toggle'},350);
 			});
+			
+			$('#rsvpbut').click(function() {
+				$('.myhomeimage').hide();
+				$('#home').show();
+			})
+			$('#homebut').click(function() {
+				$('.myhomeimage').show();
+				$('#home').hide();
+			})
 		</script>
 	</body>
 </html>

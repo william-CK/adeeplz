@@ -67,6 +67,9 @@ header h2 {
 .mynav li a{
 	color: rgb(249, 174, 210);
 }
+.mynav li {
+	color: #857AAC;
+}
 .mynav li a:hover{
 	color: #fff;
 	background: rgba(249, 174, 210, 0.6) !important;
@@ -83,6 +86,9 @@ header h2 {
 	padding-left:0px !important;
 	padding-right:0px !important;
 
+}
+#home{
+	display:none;
 }
 /* 
 nav {
