@@ -32,13 +32,13 @@
 			
 		<ul class="nav nav-pills nav-justified mynav">
 		  <li role="presentation"><a href="#" id="homebut">Home</a></li>
-		  <li role="presentation"><a href="#">Our Story</a></li>
+		  <li role="presentation"><a href="#" id="storybut">Our Story</a></li>
 		  <li role="presentation"><a href="#">Info</a></li>
-		  <li role="presentation"><a href="#">Rules</a></li>
+		  <li role="presentation"><a href="#" id="rulesbut">Rules</a></li>
 		  <li role="presentation"><span class="glyphicon glyphicon-heart" ></span></li>
 		  
 		  <li role="presentation"><a href="#">Theme</a></li>
-		  <li role="presentation"><a href="#" id="rsvpbut">RSVP</a></li>
+		  <li role="presentation"><a href="#rsvp" id="rsvpbut">RSVP</a></li>
 		  <li role="presentation"><a href="#">Contact</a></li>
 		  
 		</ul>
@@ -61,21 +61,80 @@
 		</nav>
  -->
 		</header>
-		<div class="container-fluid col-md-12 myhomeimage">
-		
-			<img src="images/final2.png" class="img-responsive"/>
-		
-		</div>
+
 		<div class="container-fluid col-md-12" id="home">
 
 			<div id="rsvp">
+				<p style="margin:20px 30px 0px 30px; color:grey;">Please note that RSVPs are final and will close one month before the wedding.
+				 A serving of food and a seat will be prepared for you. If you need to cancel on the last minute,
+				it will be your responsibility to find someone to replace your spot and inform the couple as soon as possible.
+				If you have decided to attend but you did not RSVP, chances are, you will get no serving of food and you will not find your
+				name in any of the tables....awkward.
+				</p>
 				<script type="text/javascript" src="http://app.rsvpify.com/embed/36975"></script>
 				<script type="text/javascript" src="http://app.rsvpify.com/js/iframeResizer.min.js"></script>
 				<script type="text/javascript">iFrameResize({autoResize: true,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");</script>
 			</div>
+			
+			<div class="myhomeimage">
+		
+				<img src="images/final2.png" class="img-responsive"/>
+		
+			</div>
+		</div>
+		<div class="container-fluid col-md-12" id="story">
+
+			Beginning
+
+			It was 11 years ago when they first met (I know, time hurts). They were very young and simple, 
+
+			normal kids who go to school. They never knew it will be the doorway to find love and destiny.
+
+			June 2005, it was this time their paths crossed. It was the typical high school setup, developing their 
+
+			likes, dislikes, love, and a lot more. 
+
+			It was the first glance that he knew, she was the one. After half a year of patiently courting, she 
+
+			finally said yes. Both were thrilled with their new journey together. 
+
+			Relationships demand a lot of things. Due to young age, both decided to explore life. She has been 
+
+			blessed to see the other side of the world and he continued on to fulfil his goals.  
+
+			LDR moments
+
+			Communication has never failed both of them. It was the care they have for each other that kept it. 
+
+			5 years have passed and they realised, love truly finds its way. The seed of love in them grew. The 
+
+			fire was rekindled. 
+
+			February 2010, it was this time their love was given a second chance. This was not your typical 
+
+			relationship; this is what two lovers fear, a long distance relationship, and 3,615 miles apart. It 
+
+			requires huge amount of sacrifice, patience, and understanding. It was never easy for them. 
+
+			Gratefully, they stood together, fought, and held on to their unwavering love. The fruit of their 
+
+			labour and endurance was true happiness; knowing they both have each other. 
+
+			Being together
+
+			4 long years have passed and they were blessed to finally be together; a sweet reward for all their 
+
+			sacrifices. They stuck together through the ups and downs of life. They now enjoy the true essence 
+
+			of life, going through challenges, making decisions, discovering strengths TOGETHER. 
+
+			December 16, 2016, it will be this date that they’ve decided to tie the knot forever. It will be a long 
+
+			road for them, but being together for eternity is the foundation of everything. Please join them on 
+
+			their wedding hahahhahaha
 
 		</div>
-	
 		
 		<section>
 			<footer class="container-fluid col-md-12">
@@ -103,11 +162,11 @@
 			
 			$('#rsvpbut').click(function() {
 				$('.myhomeimage').hide();
-				$('#home').show();
+				$('#rsvp').show();
 			})
 			$('#homebut').click(function() {
 				$('.myhomeimage').show();
-				$('#home').hide();
+				$('#rsvp').hide();
 			})
 		</script>
 	</body>
