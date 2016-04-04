@@ -33,13 +33,13 @@
 		<ul class="nav nav-pills nav-justified mynav">
 		  <li role="presentation"><a href="#" id="homebut">Home</a></li>
 		  <li role="presentation"><a href="#" id="storybut">Our Story</a></li>
-		  <li role="presentation"><a href="#">Info</a></li>
+		  <li role="presentation"><a href="#" id="infobut">Info</a></li>
 		  <li role="presentation"><a href="#" id="rulesbut">Rules</a></li>
 		  <li role="presentation"><span class="glyphicon glyphicon-heart" ></span></li>
 		  
 		  <li role="presentation"><a href="#">Theme</a></li>
 		  <li role="presentation"><a href="#rsvp" id="rsvpbut">RSVP</a></li>
-		  <li role="presentation"><a href="#">Contact</a></li>
+		  <li role="presentation"><a href="#" id="contactbut">Contact</a></li>
 		  
 		</ul>
 <!-- 
@@ -81,65 +81,267 @@
 				<img src="images/final2.png" class="img-responsive"/>
 		
 			</div>
-		</div>
-		<div class="container-fluid col-md-12" id="story">
+			<div class="info">
+				<div class="container-fluid">
+					
+					<h2><span class="glyphicon glyphicon-calendar"></span> Date & Time </h2>
+					<p> The wedding will be on December 16, 2016 at Club Balai Isabel, Batangas. </p>
+					<h2><span class="glyphicon glyphicon-map-marker"></span> How to get there </h2>
+					<img src="images/vicinity-map-big.png" class="img-responsive" id="map1"/>
+					<button type="button" class="btn btn-default" id="inst-op-1">Option 1 From South Super Highway (via Tagaytay)</button>
+					<br>
+					
+					<ol id="inst-op-1-list">
+						<li>Take the Sta. Rosa Exit and turn right.</li>
+						<li>Follow the main road leading to Tagaytay. When you reach Tagaytay, you will come to an intersection.</li>
+						<li>Turn left at the intersection.</li>
+						<li>Go straight until you see a public elementary school on your left and a road named Ligaya Drive on your right.</li>
+						<li>Turn right at Ligaya Drive. Follow the road down to Talisay. Please exercise caution: this is a steep road.</li>
+						<li>When you reach the bottom of the road you will come to an intersection. Turn left at this intersection.</li>
+						<li>You will pass a bridge. Club Balai Isabel is 200 meters from this bridge on the right side. If you see a second bridge, then you have gone past the resort.</li>
+					</ol>
+			
+					
+					
+		
+					<button type="button" class="btn btn-default" id="inst-op-2">Option 2: From South Super Highway</button><br>
+					<ol id="inst-op-2-list">
+						<li>On South Luzon Expressway, simply go straight past the end of the highway and straight to the STAR Tollway.</li>
+						<li>Go up the ramp at the Tanauan City exit and turn right. You are now on the National Highway.</li>
+						<li>Follow the road going to Talisay.</li>
+						<li>When you reach the town proper of Talisay, go straight ahead.</li>
+						<li>Club Balai Isabel is 500 meters from the town proper on your left side. If you see the second bridge, then you have gone past the resort.</li>
+					</ol>
+	
+					<button type="button" class="btn btn-default" id="inst-op-3">Option 3: Public Transportation: From Manila</button><br>
+				
+					<ol id="inst-op-3-list">
+						<li>Go to the bus terminal in Buendia-Taft, across Atrium hotel. Bus liners Tritran and Jam offers the trip going to Lipa,Tanauan, Batangas City.</li>
+						<li>Take the bus with the sign board Lipa, Tanauan, Batangas City. It will cost you around P70-P80 pesos per person.</li>
+						<li>Get off at Tanauan town proper bus terminal. Once you get off, you will see the tricycles beside the bus terminal.</li>
+						<li>Take the tricycle and ask the driver to bring you to the Talisay jeepney terminal besides Mc Donalds Tanauan. It will cost you P8 per person.</li>
+						<li>When you have reached the jeepney terminal, take the ride with the signboard TALISAY. It will cost you P 20 per person.</li>
+						<li>You will reach the town proper of Talisay, the jeep will stop near the church of Talisay.</li>
+						<li>Take the tricycle at the terminal near the church where you get off. Ask the driver to bring you to Cub Balai Isabel. It will cost you P8.00 per person, if you wish to take the trip alone and not wait for other passengers, be prepared to pay P 24.00.</li>
+						<li>The tricycle will bring you to Club Balai Isabel.</li>
+					</ol>
+					<button type="button" class="btn btn-default" id="inst-op-4">Option 4: Public Transportation: From Cavite</button><br>
+					
+					<ol id="inst-op-4-list">
+						<li>Go to the bus terminal in Buendia-Taft, across Atrium hotel. Bus liners Tritran and Jam offers the trip going to Lipa,Tanauan, Batangas City.</li>
+						<li>Take the bus with the sign board Lipa, Tanauan, Batangas City. It will cost you around P70-P80 pesos per person.</li>
+						<li>Get off at Tanauan town proper bus terminal. Once you get off, you will see the tricycles beside the bus terminal.</li>
+						<li>Take the tricycle and ask the driver to bring you to the Talisay jeepney terminal besides Mc Donalds Tanauan. It will cost you P8 per person.</li>
+						<li>When you have reached the jeepney terminal, take the ride with the signboard TALISAY. It will cost you P 20 per person.</li>
+						<li>You will reach the town proper of Talisay, the jeep will stop near the church of Talisay.</li>
+						<li>Take the tricycle at the terminal near the church where you get off. Ask the driver to bring you to Cub Balai Isabel. It will cost you P8.00 per person, if you wish to take the trip alone and not wait for other passengers, be prepared to pay P 24.00.</li>
+						<li>The tricycle will bring you to Club Balai Isabel.</li>
+					</ol>
+					
+					<p>Source: Balai Isabel Website</p>
+					
+					
+					<h2><span class="glyphicon glyphicon-pushpin"></span> Find your way to the venue </h2>
+					<div class="row">
+						<div class="col-xs-12 col-md-8">
+							<img src="images/club-isabel-map.png" class="img-responsive" id="map1"/>
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<ol>
+								<li>Club Balai Isabel Main Entrance</li>
+								<li>Kumintang Boardwalk - where the Ceremony will be held.</li>
+								<li>Pantalan - where the Reception will be.</li>
+							</ol>
+						</div>
+					</div>
+					<h2><span class="glyphicon glyphicon-briefcase"></span> What to bring</h2>
+					<p>A big smile, crazy dance moves, bucketload of energy and maybe some tissues. </p>
+				</div>
+		
+			</div>
+			<div class="rules">
+				•	Please come dressed in white
+				•	Mobile phones are not allowed during the ceremony
+				•	Use #Addict2016 when uploading pictures/videos
+				•	Please bring invitation to the venue
+				•	Please 
 
-			Beginning
+			</div>
+			<div class="container-fluid col-md-12" id="story">
+				<div class="row" style="margin-top:30px;">
+						<div class="col-xs-12 col-md-1 col-sm-2">
+							<h1> 2005 </h1>
+							<h6> High School not-so-Musical</h6>
+						</div>
+						<div class="col-xs-12 col-md-3 col-sm-4" id="img111">
+							<img src="images/highs2.jpg" class="img-responsive img-thumbnail" style="width:200px; height:200px; margin-left:10px; margin-right:auto;"/>
+						</div>
+						<div class="col-xs-12 col-md-8 col-sm-6">
+							<p>	2005 was the year fate coincidentally brought them together. A boy transferred back to his previous school,
+							the girl was newly transferred to a different class, and they end up in the same one. They were very young and simple, 
+							normal kids who go to school. They never knew it will be the doorway to find love and destiny. 
+							It was the first glance that he knew, she was the one. After half a year of patiently courting, she finally said yes. Both were thrilled with their new journey together. </p> 
+						</div>
 
+				</div>
+				<div class="row" style="margin-top:30px;">
+						<div class="col-xs-12 col-md-1 col-sm-2">
+							<h1> 2006 </h1>
+							<h6> Separate Ways</h6>
+						</div>
+						<div class="col-xs-12 col-md-3 col-sm-4" id="img111">
+							<img src="images/highs2.jpg" class="img-responsive img-thumbnail" style="width:200px; height:200px;"/>
+						</div>
+						<div class="col-xs-12 col-md-8 col-sm-6">
+							<p>Relationships demand a lot of things. Due to young age, both decided to explore life. She has been blessed to see the other side of the world and he continued on to fulfil his goals.</p> 
+						</div>
+						
+				</div>
+				<div class="row" style="margin-top:30px;">
+					<div class="col-xs-12 col-md-1 col-sm-2">
+							<h1> 2007 </h1>
+							<h6> Friends </h6>
+						</div>
+						<div class="col-xs-12 col-md-3 col-sm-4" id="img111">
+							<img src="images/highs2.jpg" class="img-responsive img-thumbnail" style="width:200px; height:200px;"/>
+						</div>
+						<div class="col-xs-12 col-md-2 col-sm-6">
+							<p>Communication has never failed both of them. It was the care they have for each other that kept it. </p> 
+						</div>
+				</div>
+				<div class="row" style="margin-top:30px;">
+						<div class="col-xs-12 col-md-1 col-sm-2">
+							<h1> 2010 </h1>
+							<h6> Going the Distance </h6>
+						</div>
+						<div class="col-xs-12 col-md-3 col-sm-4" id="img111">
+							<img src="images/highs2.jpg" class="img-responsive img-thumbnail" style="width:200px; height:200px; margin-left:10px; margin-right:auto;"/>
+						</div>
+						<div class="col-xs-12 col-md-8 col-sm-6">
+							<p> High School Sweethearts, Young lovers, Ex's that got back together... what other typical lovers scenario could they have? 
+							Just as their love was given a second chance, their relationship goes long distance. Both took the risk of probably achieving nothing out of this relationship
+							since they both permanently live in two different countries. Thank heavens for technology. This year, She worked to save up for university, while he is finishing his own degree.
+							</p> 
+						</div>
+				</div>
+				
+				<div class="row" style="margin-top:30px;">
+						<div class="col-xs-12 col-md-1 col-sm-2">
+							<h1> 2011 </h1>
+							<h6> See you again </h6>
+						</div>
+						<div class="col-xs-12 col-md-3 col-sm-4" id="img111">
+							<img src="images/highs2.jpg" class="img-responsive img-thumbnail" style="width:200px; height:200px; margin-left:10px; margin-right:auto;"/>
+						</div>
+						<div class="col-xs-12 col-md-8 col-sm-6">
+							<p> He finished his degree and started working.
+								She visited him.
+								She started university.
+							</p> 
+						</div>
+				</div>
+				<div class="row" style="margin-top:30px;">
+						<div class="col-xs-12 col-md-1 col-sm-2">
+							<h1> 2014 </h1>
+							<h6> The Proposal</h6>
+						</div>
+						<div class="col-xs-12 col-md-3 col-sm-4" id="img111">
+							<img src="images/proposal.jpg" class="img-responsive img-thumbnail" style="width:200px; height:200px; margin-left:10px; margin-right:auto;"/>
+						</div>
+						<div class="col-xs-12 col-md-8 col-sm-6">
+							<p> 4 years worth of text messages, skype calls & facetime. 3 615 miles apart. This required a lot of sacrifice, patience, and understanding. 
+							It was never easy. Gratefully, they stood together, fought, and held on to their unwavering love. The fruit of their labour and endurance 
+							was true happiness; knowing they both have each other. 4 long years have passed and they were blessed to finally be together; a sweet reward for all their sacrifices.
+							</p> 
+						</div>
+				</div>
+				<div class="row" style="margin-top:30px;">
+						<div class="col-xs-12 col-md-1 col-sm-2">
+							<h1> 2015 </h1>
+							<h6> The Two-Year Engagement</h6>
+						</div>
+						<div class="col-xs-12 col-md-3 col-sm-4" id="img111">
+							<img src="images/proposal.jpg" class="img-responsive img-thumbnail" style="width:200px; height:200px; margin-left:10px; margin-right:auto;"/>
+						</div>
+						<div class="col-xs-12 col-md-8 col-sm-6">
+							<p>Being together has become the new challenge for these two, getting started on their new life together, building on their careers and investing for the future.
+							They stuck together through the ups and downs of life. Now, they enjoy the true essence of life, going through challenges, making decisions, discovering strengths TOGETHER. </p>
+							 
+						</div>
+				</div>
+				<div class="row" style="margin-top:30px;">
+						<div class="col-xs-12 col-md-1 col-sm-2">
+							<h1> 2016 </h1>
+							<h6> The Wedding </h6>
+						</div>
+						<div class="col-xs-12 col-md-3 col-sm-4" id="img111">
+							<img src="images/proposal.jpg" class="img-responsive img-thumbnail" style="width:200px; height:200px; margin-left:10px; margin-right:auto;"/>
+						</div>
+						<div class="col-xs-12 col-md-8 col-sm-6">
+							<p>December 16, 2016 - will be the day they can both officially annoy each other for the rest of their lives. It will be a long  road for them, but being together for eternity is the foundation of everything.</p>			 
+						</div>
+				</div>
+				
+				
+<!--		Beginning
 			It was 11 years ago when they first met (I know, time hurts). They were very young and simple, 
-
 			normal kids who go to school. They never knew it will be the doorway to find love and destiny.
-
 			June 2005, it was this time their paths crossed. It was the typical high school setup, developing their 
-
 			likes, dislikes, love, and a lot more. 
 
 			It was the first glance that he knew, she was the one. After half a year of patiently courting, she 
-
 			finally said yes. Both were thrilled with their new journey together. 
 
 			Relationships demand a lot of things. Due to young age, both decided to explore life. She has been 
-
 			blessed to see the other side of the world and he continued on to fulfil his goals.  
 
 			LDR moments
-
 			Communication has never failed both of them. It was the care they have for each other that kept it. 
-
 			5 years have passed and they realised, love truly finds its way. The seed of love in them grew. The 
 
 			fire was rekindled. 
-
 			February 2010, it was this time their love was given a second chance. This was not your typical 
-
 			relationship; this is what two lovers fear, a long distance relationship, and 3,615 miles apart. It 
-
 			requires huge amount of sacrifice, patience, and understanding. It was never easy for them. 
-
 			Gratefully, they stood together, fought, and held on to their unwavering love. The fruit of their 
-
 			labour and endurance was true happiness; knowing they both have each other. 
-
 			Being together
-
 			4 long years have passed and they were blessed to finally be together; a sweet reward for all their 
-
 			sacrifices. They stuck together through the ups and downs of life. They now enjoy the true essence 
-
 			of life, going through challenges, making decisions, discovering strengths TOGETHER. 
-
 			December 16, 2016, it will be this date that they’ve decided to tie the knot forever. It will be a long 
-
 			road for them, but being together for eternity is the foundation of everything. Please join them on 
-
 			their wedding hahahhahaha
-
+-->
+		</div>
 		</div>
 		
-		<section>
-			<footer class="container-fluid col-md-12">
+		<div class="container-fluid col-md-12" id="contact">
+			For any other inquires, questions, suggestions, etc. You can reach us at:
+			
+			Adeleen Pavia (soon Lucero)
+				Email: pinkleen_02@yahoo.com
+				Australian Phone/Viber: +61 488 742 733
+				Philippine Phone: +62 921 408 0288
+				facebook: https://www.facebook.com/pink.baby.princess
 				
-			</footer>
+			John Benedict Lucero
+				Email: jblucero16@gmail.com
+				Australian Phone: +61 449 579 404
+				facebook: https://www.facebook.com/johnbenedict.lucero	
+				
+				
+			Juneth (Wedding Coordinator)
+				Phone: +639	
+		
+		</div>
+		
+		<footer class="footer">
+		
+				
+		</footer>
+		<section>
+			
 		</section>
 		<script type="text/javascript">
 		  $(".countdown")
@@ -163,11 +365,46 @@
 			$('#rsvpbut').click(function() {
 				$('.myhomeimage').hide();
 				$('#rsvp').show();
-			})
+				$('#story').hide();
+				$('.info').hide();
+				$('#contact').hide();
+			});
 			$('#homebut').click(function() {
 				$('.myhomeimage').show();
 				$('#rsvp').hide();
-			})
+				$('#story').hide();
+				$('#contact').hide();
+				$('.info').hide();
+			
+			});
+			$('#infobut').click(function() {
+				$('.myhomeimage').hide();
+				$('#rsvp').hide();
+				$('.info').show();
+				$('#story').hide();
+				$('#contact').hide();
+			});
+			$('#storybut').click(function() {
+				$('.myhomeimage').hide();
+				$('#rsvp').hide();
+				$('.info').hide();
+				$('#story').show();
+				$('.info').hide();
+				$('#contact').hide();
+			});
+			$('#contactbut').click(function() {
+				$('.myhomeimage').hide();
+				$('#rsvp').hide();
+				$('.info').hide();
+				$('#story').hide();
+				$('#contact').show();
+			});
+			$("button").click(function(){
+				var a = this.id;
+				console.log(a);
+				console.log("#" + a + "-list");
+				$("#" + a + "-list").toggle();
+			});
 		</script>
 	</body>
 </html>
