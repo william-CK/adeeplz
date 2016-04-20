@@ -62,9 +62,9 @@
  -->
 		</header>
 
-		<div class="container-fluid col-md-12" id="home">
+		<div class="container-fluid col-md-12 section" id="home">
 
-			<div id="rsvp">
+			<div id="rsvp" class='section'>
 				<p style="margin:20px 30px 0px 30px; color:grey;">Please note that RSVPs are final and will close one month before the wedding.
 				 A serving of food and a seat will be prepared for you. If you need to cancel on the last minute,
 				it will be your responsibility to find someone to replace your spot and inform the couple as soon as possible.
@@ -76,13 +76,13 @@
 				<script type="text/javascript">iFrameResize({autoResize: true,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");</script>
 			</div>
 			
-			<div class="myhomeimage">
+			<div class="myhomeimage section">
 		
-				<img src="images/final2.png" class="img-responsive"/>
+				<!-- <img src="images/final2.png" class="img-responsive"/> -->
 		
 			</div>
 		</div>
-		<div class="container-fluid col-md-12" id="story">
+		<div class="container-fluid col-md-12 section" id="story">
 
 			Beginning
 
@@ -161,13 +161,20 @@
 			});
 			
 			$('#rsvpbut').click(function() {
-				$('.myhomeimage').hide();
-				$('#rsvp').show();
+				// $('.myhomeimage').hide();
+				$(".section").fadeOut();
+				$('#rsvp').fadeIn();
 			})
 			$('#homebut').click(function() {
-				$('.myhomeimage').show();
-				$('#rsvp').hide();
-			})
+				$(".section").fadeOut();
+				$('.myhomeimage').fadeIn();
+				// $('#rsvp').hide();
+				$('.myhomeimage').parent().fadeIn();
+			});
+			$("#storybut").click(function(){
+				$(".section").fadeOut();
+				$("#story").fadeIn();
+			});
 		</script>
 	</body>
 </html>
